@@ -1,0 +1,13 @@
+service: aws-python-project
+useDotenv: true
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+  profile: ${aws_profile}
+
+functions:
+  hello:
+    handler: handler.hello
